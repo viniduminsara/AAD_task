@@ -16,6 +16,7 @@ public class Task extends HttpServlet {
         String header1 = req.getHeader("Task-Custom-Header");
         System.out.println(header1);
 
-        String name = req.getQueryString("name");
+        String name = req.getParameter("name");
+        System.out.println(name);
     }
 }
